@@ -59,6 +59,7 @@ import {
 import { ImporterComponent } from './components/importer/importer.component';
 import { ParserService } from './services/parser.service';
 import { AnalyzerComponent } from './components/analyzer/analyzer.component';
+import { TransferService } from './services/transfer.service';
 
 @NgModule({
     imports: [
@@ -105,7 +106,8 @@ import { AnalyzerComponent } from './components/analyzer/analyzer.component';
         TcGroupService,
         TcIndicatorService,
         TcOwnerService,
-        ParserService
+        ParserService,
+        TransferService,
     ],
     bootstrap: [AppComponent]
 })
