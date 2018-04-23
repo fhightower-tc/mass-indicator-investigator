@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>Indicator</th>
+        <th *ngFor="let engine of externalAnalysisEngines">{{ engine.name }}</th>
+    </tr>
+    <tr *ngFor="let indicator of parser.indicators">
+        <td>{{ indicator.indicator }} ({{ indicator.type }})</td>
+        <td *ngFor="let engine of externalAnalysisEngines">{{ results[indicator.indicator][engine.name].a }} {{ results[indicator.indicator][engine.name].b }}</td>
+    </tr>
+</table>
