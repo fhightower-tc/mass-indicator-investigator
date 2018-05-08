@@ -60,6 +60,7 @@ import { ImporterComponent } from './components/importer/importer.component';
 import { ParserService } from './services/parser.service';
 import { AnalyzerComponent } from './components/analyzer/analyzer.component';
 import { TransferService } from './services/transfer.service';
+import { DatastoreService } from './services/datastore.service';
 
 @NgModule({
     imports: [
@@ -108,6 +109,7 @@ import { TransferService } from './services/transfer.service';
         TcOwnerService,
         ParserService,
         TransferService,
+        DatastoreService
     ],
     bootstrap: [AppComponent]
 })
